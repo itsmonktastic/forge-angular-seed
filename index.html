@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+		<script type="text/javascript" src="lib/fastclick/js/fastclick.js"></script>
+		<script type="text/javascript">
+			window.addEventListener('load', function() {
+				FastClick.attach(document.body);
+			}, false);
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="lib/topcoat/css/topcoat-mobile-light.css">
+		
+		<script type="text/javascript" src="lib/forge-browser-shim/js/forge-browser-shim.js"></script>
+		<link rel="stylesheet" type="text/css" href="lib/forge-browser-shim/css/forge-browser-shim.css">
+		
+		<script type="text/javascript" src="lib/angular/js/angular.js"></script>
+		<script type="text/javascript" src="lib/angular/js/angular-touch.js"></script>
+		
+		<script type="text/javascript" src="lib/angular-ui-router/js/angular-ui-router.js"></script>
+
+		<script type="text/javascript" src="lib/angular-mobile-nav/js/mobile-nav.js"></script>
+		<link rel="stylesheet" type="text/css" href="lib/angular-mobile-nav/css/mobile-nav.css">
+		
+		<script type="text/javascript" src="lib/angular-forge/js/angular-forge.js"></script>
+
+		<script type="text/javascript" src="albumshare/module.js"></script>
+		<script type="text/javascript" src="albumshare/routes.js"></script>
+		<script type="text/javascript" src="albumshare/controllers.js"></script>
+		<script type="text/javascript" src="albumshare/getimage.js"></script>
+
+	</head>
+	<body ng-app="albumshare">
+		<a ui-sref="upload">Upload</a>
+		<a ui-sref="albums.list">Albums</a>
+		<div ui-view></div>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<div style="text-align: center;">
+	<div ng-hide="imageUrl">
+		<button ng-click="getFile()" class="topcoat-button--large">Take picture</button>
+	</div>
+	<div ng-show="imageUrl">
+		<img ng-src="{{imageUrl}}">
+		<div>
+			Album: {{album.name}}
+		</div>
+		<div>
+			<button ng-click="upload()" class="topcoat-button--large">Upload</button>
+		</div>
+	</div>
+</div>

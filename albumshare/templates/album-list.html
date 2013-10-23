@@ -1,0 +1,8 @@
+<div class="topcoat-list">
+	<h3 class="topcoat-list__header">Album</h3>
+	<ul class="topcoat-list__container">
+		<li ng-repeat="a in albums" class="topcoat-list__item">
+			<div ng-click="navigateTo(a)">{{a.name}}</div>
+		</li>
+	</ul>
+</div>

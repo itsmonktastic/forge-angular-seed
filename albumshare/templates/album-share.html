@@ -1,0 +1,13 @@
+<a href="#/albums/{{album.id}}">{{album.name}}</a>
+
+<h1>Share {{album.name}}</h1>
+
+<div ng-show="contact">
+	You selected {{contact.displayName}}
+</div>
+
+<div ng-hide="contact">
+	<button ng-click="chooseContact()">Choose Contact</button>
+</div>
+
+<button ng-disabled="!contact" ng-click="share()">Share</button>
